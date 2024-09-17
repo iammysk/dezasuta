@@ -77,8 +77,8 @@
 }
 
 .about_us_inner {
-    width: 50%;
-    margin: 57px auto 34px 80px
+    width:fit-content;
+    margin: 57px 0 34px 8%;
 }
 .about_us_logo {
     width: 272px;
@@ -171,7 +171,6 @@
 .event {
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .event_content {
@@ -181,7 +180,6 @@
 .event_logo {
     width: 174px;
     margin: 59px auto 31px;
-    text-align: center;
 }
 
 .event_article {
@@ -189,14 +187,9 @@
     border: #4F260B solid 3px;
 }
 
-.event_article2 {
-    width:fit-content;
-}
-
 .event_list {
     padding-top: 54px;
     padding-bottom: 54px;
-    margin: 0 auto;
 }
 
 .event_columu {
@@ -208,8 +201,12 @@
 }
 
 .event_columu > p {
-    margin-left: 54px;
+    margin-left: 5%;
     border-bottom: 2px solid #4F260B;
+}
+
+.event_columu >time {
+    margin-left: 16%;
 }
 
 
@@ -269,10 +266,10 @@ iframe{
 .footer_copyright {
     text-align: center;
 }
-/*
+
 .to_top {
     position: fixed;
     right: 40px;
     bottom: 40px;
     width: 125px;
-}*/
+}
