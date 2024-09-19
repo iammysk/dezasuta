@@ -65,7 +65,7 @@
 /* about us */
 .about_us_columu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -77,16 +77,18 @@
 }
 
 .about_us_inner {
-    width:fit-content;
-    margin: 57px 0 34px 8%;
+    width:41%;
+
 }
 .about_us_logo {
     width: 272px;
+    margin-top: 50px;
 }
 
 .about_us_sabtitle {
     font-size: 44px;
     line-height: 1.39;
+    margin: 48px auto 24px;
 }
 
 .about_us_text {
@@ -190,6 +192,8 @@
 .event_list {
     padding-top: 54px;
     padding-bottom: 54px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .event_columu {
@@ -201,12 +205,8 @@
 }
 
 .event_columu > p {
-    margin-left: 5%;
+    margin-left: 50px;
     border-bottom: 2px solid #4F260B;
-}
-
-.event_columu >time {
-    margin-left: 16%;
 }
 
 
