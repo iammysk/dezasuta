@@ -6,13 +6,18 @@
     <title>第4回課題</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <!--header-->
     <header id="header">
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+                
             </div>
         </div>
         <div class="header_wrap">
@@ -28,63 +33,131 @@
                     <li><a href="#access">ACCESS</a></li>
                 </ul>
              </nav>
+             <div class="sp_btn">
+                <span></span>
+             </div>
+             <nav class="sp_nav">
+                <ul>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+             </nav>
         </div>
     </header>
 
     <!--main-->
     <main>
         <div class="main_inner">
-            <p class="main_title1">Have a happy day From a cup of coffee</p>
-            <p class="main_title2">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-            <p class="main_title3">
-                毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
-            </p>
+            <div class="main_title1">
+                <span class="pc_br">Have a happy day From a cup of coffee</span>
+            </div>
+            <div class="main_title2">
+                <span class="pc_br">ハッピーに溢れる1日を</span><span class="pc_br">1杯のコーヒーから。</span>
+            </div>
+            <div class="main_title3">
+                <span class="pc_br">毎日を丁寧に大切に過ごしたい。</span><span class="sp_br">だからこそ一杯一杯丁寧にコーヒーを入れ</span><span class="pc_br">足を運んでくれるお客さんには落ち着く空間と</span><span class="sp_br">こだわりのコーヒーを提供したい。</span>
+            </div>
         </div>
+        
+            
+        
 
         <!--aboutus-->
-        <section id="aboutus" class="about_us_columu">
+        <div class="pc_about">
+            <section id="aboutus" class="about_us_columu">
             <img src="./images/pc_about-100.jpg" alt="" class="about_us_photo">
             <div class="about_us_inner">
                 <img src="./images/about_us@2x.png" alt="" class="about_us_logo">
                 <p class="about_us_sabtitle">私たちが提供する<br>こだわりのコーヒー</p>
-                <p class="about_us_text">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
+                <p class="about_us_text">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p> 
+            </div>
+            </section>
+        </div>
+        
+        
+        <!--スマホ版-->
+        <div class="sp_about">
+            <section id="aboutus" class="about_us_columu">
+                <img src="./images/about_us@2x.png" alt="" class="about_us_logo">
+                <img src="./images/about_us@2x-100.jpg" alt="" class="about_us_photo">
+            <div class="about_us_inner">
+                <p class="about_us_sabtitle">私たちが提供する<br>こだわりのコーヒー</p>
+                <p class="about_us_text">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p> 
             </div>
         </section>
+        </div>
+        
 
         <!--section_menu-->
-        <section id="menu" class="menu">
-            <div class="menu_content">
-                <div class="menu_logo">
-                    <img src="./images/menu@2x.png" alt="" >
-                </div>            
-                <div class="menu_columu">
-                    <div class="menu_inner">
-                        <div>
-                            <img src="./images/pc_menu_drink-100.jpg" alt="" class="menu_photo">
-                            <p class="menu_label">Drink</p>
+        <div class="pc_menu">
+            <section id="menu" class="menu">
+                <div class="menu_content">
+                    <div class="menu_logo">
+                        <img src="./images/menu@2x.png" alt="" >
+                    </div>            
+                    <div class="menu_columu">
+                        <div class="menu_inner">
+                            <div>
+                                <img src="./images/pc_menu_drink-100.jpg" alt="" class="menu_photo">
+                                <p class="menu_label">Drink</p>
+                            </div>
+                            <p class="menu_sidebar">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                         </div>
-                        <p class="menu_sidebar">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                    </div>
-                    <div class="menu_inner">
-                        <div>
-                            <img src="./images/pc_menu_food-100.jpg" alt="" class="menu_photo">
-                            <p class="menu_label">Food</p>
+                        <div class="menu_inner">
+                            <div>
+                                <img src="./images/pc_menu_food-100.jpg" alt="" class="menu_photo">
+                                <p class="menu_label">Food</p>
+                            </div>
+                            <p class="menu_sidebar">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                         </div>
-                        <p class="menu_sidebar">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                    </div>
-                    <div class="menu_inner">
-                        <div>
-                            <img src="./images/pc_menu_sweets-100.jpg" alt="" class="menu_photo">
-                            <p class="menu_label">Sweets</p>
+                        <div class="menu_inner">
+                            <div>
+                                <img src="./images/pc_menu_sweets-100.jpg" alt="" class="menu_photo">
+                                <p class="menu_label">Sweets</p>
+                            </div>
+                            <p class="menu_sidebar">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                         </div>
-                        <p class="menu_sidebar">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                     </div>
                 </div>
-            </div>
+            </section>    
+        </div>
+        <!--スマホ版-->
+        <div class="sp_menu">
+            <section id="menu" class="menu">
+                <div class="menu_content">
+                    <div class="menu_logo">
+                        <img src="./images/menu@2x.png" alt="" >
+                    </div>            
+                    <div class="menu_columu">
+                        <div class="menu_inner">
+                            <div>
+                                <img src="./images/drink_sp@2x-100.jpg" alt="" class="menu_photo">
+                                <p class="menu_label">Drink</p>
+                            </div>
+                            <p class="menu_sidebar">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                        </div>
+                        <div class="menu_inner">
+                            <div>
+                                <img src="./images/food_sp@2x-100.jpg" alt="" class="menu_photo">
+                                <p class="menu_label">Food</p>
+                            </div>
+                            <p class="menu_sidebar">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                        </div>
+                        <div class="menu_inner">
+                            <div>
+                                <img src="./images/cake_sp@2x-100.jpg" alt="" class="menu_photo">
+                                <p class="menu_label">Sweets</p>
+                            </div>
+                            <p class="menu_sidebar">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+        </div>
         
-        
-
-        </section>
 
         <!--section_gallery-->
         <section id="gallery" class="gallery">
@@ -163,6 +236,15 @@
         </div>
         
     </footer>
+
+    <script>
+        $(function(){
+            $('.sp_btn').on('click',function(){
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
+        })
+    </script>
 </body>
 </html>
 

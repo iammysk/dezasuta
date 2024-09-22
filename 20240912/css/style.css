@@ -36,6 +36,96 @@
     width: 226px;
 }
 
+/* header スマホ版 */
+.sp_nav {
+    display: none;
+}
+@media screen and (max-width:1100px) {
+    .pc_nav {
+        display: none;
+    }
+    .sp_btn {
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        /* 重なり具合 */
+        z-index: 2;
+    }
+    .sp_btn span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        /* 位置の調整 */
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content:"";
+        display: block;
+        width: 33px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        /* 位置の調整 */
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top:10px;
+    }
+
+    /* ばつ印 */
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    /* メニューの見た目 */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* 重なり具合 */
+        z-index: 1px;
+    }
+
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sp_nav ul li {
+        padding: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+}
+    
 /* main */
 
 .main_inner {
@@ -60,6 +150,51 @@
     font-size: 23px;
     line-height: 1.65;
     letter-spacing: 0.1em;
+}
+
+.pc_br {
+    display: inline-block;
+}
+/* main スマホ版 */
+@media screen and (max-width:1100px) {
+    .main_title1 {
+        font-size: 20px;
+    }
+    
+    .main_title2 {
+        font-size: 60px;
+    }
+    
+    .main_title3 {
+        font-size: 20px;
+    }
+    .sp_br {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main_inner {
+        margin: 41px auto 55px;
+    }
+    .main_title1 {
+        font-size: 17px;
+        margin-bottom: 22px;
+    }
+    
+    .main_title2 {
+        font-size: 38px;
+        margin-bottom: 21px;
+        line-height: 1.16;
+        letter-spacing: 0.1em;
+    }
+    
+    .main_title3 {
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.1em;
+    }
+    
 }
 
 /* about us */
@@ -95,6 +230,29 @@
     font-size: 16px;
     line-height: 1.625;
 }
+
+@media screen and (min-width:1101px) {
+    .sp_about {
+        display: none;
+    }
+}
+/* about スマホ版 */
+@media screen and (max-width:1100px) {
+.about_us_sabtitle{
+    font-size: 36px;
+}
+}
+
+@media screen and (max-width:767px) {
+.pc_about {
+    display: none;
+}
+.about_us_columu {
+    flex-direction: column;
+}
+
+}
+
 
 /*section_menu*/
 
@@ -142,6 +300,13 @@
     line-height: 1.47;
     padding-top: 44px;
 }
+
+
+/* menu スマホ版 */
+@media screen and (max-width:767px) {
+    
+}
+
 
 
 /*section_gallery*/
@@ -208,6 +373,16 @@
     margin-left: 50px;
     border-bottom: 2px solid #4F260B;
 }
+/* event スマホ版 */
+@media screen and (max-width:767px) {
+    .event_columu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .event_columu > p {
+        margin-left: 0;
+    }
+}
 
 
 /*access*/
@@ -272,4 +447,21 @@ iframe{
     right: 40px;
     bottom: 40px;
     width: 125px;
+}
+/* footer スマホ版 */
+@media screen and (max-width:767px) {
+    .footer_columu {
+        flex-direction: column;
+    }
+    .footer_address {
+        font-size: 18px;
+        margin-top: 27px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .to_top {
+        right: 11px;
+        bottom: 205px;
+    }
+
 }
